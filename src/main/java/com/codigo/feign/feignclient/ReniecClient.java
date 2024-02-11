@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ReniecClient {
 
     //Tokens are in the headers
-
     @GetMapping("/dni")
     ReniecResponse getInfo(@RequestParam("numero") String numero, @RequestHeader("Authorization") String token);
 
